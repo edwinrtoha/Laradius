@@ -1,0 +1,27 @@
+{
+    "name": "edwinrtoha/laradius",
+    "description": "Laravel and Freeradius integration API library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Edwinrtoha\\Laradius\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edwin Rahmad Toha",
+            "email": "edwin.rahmad.toha007@gmail.com"
+        }
+    ],
+    "require": {
+        "edwinrtoha/laravelboilerplate": "@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Edwinrtoha\\Laradius\\LaradiusServiceProvider"
+            ]
+        }
+    }
+}
