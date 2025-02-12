@@ -31,9 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('radusergroup', function (Blueprint $table) {
-            $table->dropForeign(['groupname']);
-        });
 
         Schema::table('radgroupcheck', function (Blueprint $table) {
             $table->dropForeign(['groupname']);
