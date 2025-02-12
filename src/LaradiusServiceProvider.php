@@ -62,6 +62,7 @@ class LaradiusServiceProvider extends ServiceProvider
             __DIR__.'/database/migrations/create_radius_users_table.php.stub' => $this->getMigrationFileName('create_radius_users_table.php'),
             __DIR__.'/database/migrations/create_radius_groups_table.php.stub' => $this->getMigrationFileName('create_radius_groups_table.php'),
             __DIR__.'/database/migrations/add_group_id_to_radius_users_table.php.stub' => $this->getMigrationFileName('add_group_id_to_radius_users_table.php'),
+            __DIR__.'/database/migrations/modify_foreign_owner_id_in_radius_users_table_to_reference_to_people_table.php.stub' => $this->getMigrationFileName('modify_foreign_owner_id_in_radius_users_table_to_reference_to_people_table.php'),
         ], 'freeradius-schema-migrations');
     }
 }
