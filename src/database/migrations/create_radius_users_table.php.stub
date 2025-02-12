@@ -26,10 +26,6 @@ return new class extends Migration
             $table->foreign('username')->references('username')->on('radius_users')->cascadeOnDelete()->cascadeOnUpdate();
         });
 
-        Schema::table('radusergroup', function (Blueprint $table) {
-            $table->foreign('username')->references('username')->on('radius_users')->cascadeOnDelete()->cascadeOnUpdate();
-        });
-
         // Schema::table('radpostauth', function (Blueprint $table) {
         //     $table->foreign('username')->references('username')->on('radius_users')->cascadeOnDelete()->cascadeOnUpdate();
         // });
